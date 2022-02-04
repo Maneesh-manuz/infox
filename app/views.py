@@ -1,3 +1,4 @@
+from django.http import request
 from django.shortcuts import render
 
 
@@ -12,7 +13,7 @@ def DEVtable(request):
 def DEVtaskmain(request):
     return render(request,'DEVtaskmain.html')   
 def DEVtaskform(request):
-    return render(request,'DEVaskform.html')
+    return render(request,'DEVtaskform.html')
 def DEVtask(request):
     return render(request,'DEVtask.html')
 def DEVsuccess(request):

@@ -1,13 +1,13 @@
-{%extends 'index.html'%}
+{%extends 'DEVindex.html'%}
 {%load static%}
 {%block content%}
  <body>
   <div class="content-wrapper">
   <main class="ps-0 ps-md-5 flex-grow-1">
     <div class="row">
-    <div class="mt-4 mb-5 ml-5" style="opacity: 0.36;color: rgb(255, 254, 254);font-size: 20px;font-weight: 600;"><span class="ml-3">ASSIGNED TASKS</span></div></div>
+    <div class="mt-4 mb-5 ml-5" style="opacity: 0.36;color: rgb(255, 254, 254);font-size: 20px;font-weight: 600; color: #6c7293;"><span class="ml-3">ASSIGNED TASKS</span></div></div>
  
-    <a href="/taskform/" style="text-decoration:none;">
+    <a href="/app/DEVtaskform" style="text-decoration:none;">
  
     <div class="row mt-3 " >
      
@@ -23,7 +23,7 @@
         </div><br>
       </a>  
     
-      <a href="/task/" style="text-decoration:none;">
+      <a href="/app/DEVtask" style="text-decoration:none;">
       <div class="row p-3" style="border:1px ;border-radius:10px; background-color:#191c24; width: 100%;">
         <div class="col-md-1" >
           <img src="{% static 'circle.png'%}" width="20" height="20" ><span class="ml-5" style="opacity:0.36;font-size: 20px;font-weight: 300;color: #6c7293;" ></div>

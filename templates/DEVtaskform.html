@@ -1,4 +1,4 @@
-{%extends 'index.html'%}
+{%extends 'DEVindex.html'%}
 {%load static%}
 {%block content%}
 
@@ -12,7 +12,7 @@
         <div class="col-md-8 w-100">
           <div class="card">
             <div class="card-body">
-                   <form action="/DEVsuccess/" method="post">
+                   <form action="/app/DEVsuccess" method="post">
                      {% csrf_token %}
                     <div class="row pt-1">
                       <div class="col-md-4">
@@ -66,7 +66,8 @@
                         <div class="col-md-4"></div>
                          <div class="col-md-4">
                         </div>
-                        <div class="col-md-4"><button type="submit" id="alert2" class="btn btn-primary ml-5" style="color:#6C7293;" >submit</button></div>
+                        <div class="col-md-4"><button type="Submit" class="btn btn-outline-success btn-icon-text">
+                          <i class="mdi mdi-file-check btn-icon-prepend"></i> Submit </button></div>
                          <div>
                 </form>
             </div>
