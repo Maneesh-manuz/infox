@@ -19,6 +19,11 @@ from  app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index),
-    path('projects/', views.projects),
+    path('DEVindex/', views.DEVindex),
+    path('DEVprojects/', views.DEVprojects),
+    path('DEVtable/', views.DEVtable),
+    path('DEVtaskmain/', views.DEVtaskmain),
+    path('DEVtaskform/', views.DEVtaskform),
+    path('DEVtask/', views.DEVtask),
+    path('DEVsuccess/', views.DEVsuccess),
 ]
