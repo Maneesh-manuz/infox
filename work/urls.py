@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import re_path,include
-from app import views
+from . import views
 
 urlpatterns = [
     re_path(r'^admin/', admin.site.urls),
-    re_path(r'app/', include('app.urls')),
-    re_path(r'^$', views.DEVindex, name='DEVindex'),
+    re_path(r'^app/', include('app.urls')),
+    re_path(r'^$', views.manager_index, name='manager_index'),
 ]
 
 

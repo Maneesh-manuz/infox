@@ -1,5 +1,5 @@
 from django.shortcuts import redirect
 
 
-def DEVindex(request):
+def manager_index(request):
     return redirect('/app/')
